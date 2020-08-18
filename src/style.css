@@ -1,0 +1,142 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  width: 100%;
+}
+
+/* header  */
+.logo{
+  padding: 1rem 0 0 0;
+}
+
+.main-header{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(248, 220, 220);
+}
+
+/* main section */
+.main-img{
+  padding: 1rem;
+  width: 100%;
+}
+
+.main-content{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* hamburger  */
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+  outline: none;
+}
+.line {
+  fill: none;
+  stroke: hsl(257, 7%, 63%);
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+/* mobile navbar  */
+.navbar{
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul{
+  width: 85%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: hsl(257, 27%, 26%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 1rem 0 1rem 0;
+}
+
+.mobile-nav__list{
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.mobile-nav__list a{
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+#login-btn{
+  border: none;
+  background: transparent;
+  color: white;
+  font-weight: 700;
+  font-size: 1.125rem;
+  outline: none;
+}
+
+#signup-btn{
+  border: none;
+  background: hsl(180, 66%, 49%);
+  color: white;
+  font-weight: 700;
+  font-size: 1.125rem;
+  outline: none;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  border-radius: 2rem;
+}
+
+/* support */
+.main-nav{
+  display: none;
+}
+
+.mobile-nav{
+  display: none;
+}
+
+.open{
+  display: block;
+}
+
+.close{
+  display: none;
+}
