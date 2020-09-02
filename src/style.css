@@ -16,6 +16,7 @@ body{
 .main-header{
   display: flex;
   justify-content: space-between;
+  padding: 1.5rem 0.5rem 0 0.8rem;
 }
 
 /* main section */
@@ -29,6 +30,7 @@ body{
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 0 0.5rem 0 0.5rem;
 }
 
 .main-content h1{
@@ -196,7 +198,7 @@ body{
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 1.5rem 0 1.5rem 0;
+  padding: 1.5rem 0 2.5rem 0;
 }
 
 .main-sub h2{
@@ -334,4 +336,11 @@ footer{
 
 .close{
   display: none;
+}
+
+
+@media(max-width: 280px){
+  .start-section h2{
+    font-size: 1.2rem;
+  }
 }
