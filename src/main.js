@@ -98,6 +98,7 @@ function copyUrl() {
     window.getSelection().addRange(range);
     document.execCommand("copy");
     window.getSelection().removeAllRanges();
+    console.log('done');
   }
   catch(err){
     console.log(err);
