@@ -4,6 +4,7 @@ const imageDisabler = document.querySelector('.main-img');
 
 const shortenBtn = document.querySelector(".url-shorten__btn");
 const formInput = document.getElementById('input');
+// eslint-disable-next-line no-unused-vars
 const copyBtn = document.querySelector('.url-copy__btn');
 const List = document.querySelector('.list')
 const errorHandling = document.querySelector('.error-msg')
@@ -88,6 +89,7 @@ shortenBtn.addEventListener("click", event => {
   
 })
 
+// eslint-disable-next-line no-unused-vars
 function copyUrl() {
   try{
     const range = document.createRange();
